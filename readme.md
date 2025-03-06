@@ -1,5 +1,5 @@
 # Super Simon Game 🎮
-
+[View Live Page] (https://sandrodevx.github.io/Simon-Game/)
 Welcome to **Super Simon**, a fun and interactive memory game inspired by the classic Simon game! This project is built using **HTML**, **CSS**, and **JavaScript**, and it features a modern and unique design to make your gaming experience even more enjoyable.
 
 ---
