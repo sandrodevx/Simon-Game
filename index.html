@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Esto le dice a la computadora que es un documento HTML -->
+<html lang="en" dir="ltr">
+<!-- Aquí empieza la página web -->
+
+<head>
+  <!-- Aquí van cosas que no se ven en la página, pero son importantes -->
+  <meta charset="utf-8">
+  <!-- Esto ayuda a que las letras se vean bien -->
+  <title>Super Simon</title>
+  <!-- Este es el nombre que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Aquí enlazamos el archivo de estilos (colores y formas) -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Usamos una fuente divertida que parece de videojuegos -->
+</head>
+
+<body>
+  <!-- Aquí va todo lo que se ve en la página -->
+  <h1 id="level-title">¡Toca cualquier tecla para empezar!</h1>
+  <!-- Este es el título que dice qué hacer -->
+  <div class="container">
+    <!-- Este es un contenedor para los botones de colores -->
+    <div class="row">
+      <!-- Primera fila de botones -->
+      <div type="button" id="green" class="btn green"></div>
+      <!-- Botón verde -->
+      <div type="button" id="red" class="btn red"></div>
+      <!-- Botón rojo -->
+    </div>
+    <div class="row">
+      <!-- Segunda fila de botones -->
+      <div type="button" id="yellow" class="btn yellow"></div>
+      <!-- Botón amarillo -->
+      <div type="button" id="blue" class="btn blue"></div>
+      <!-- Botón azul -->
+    </div>
+  </div>
+
+  <!-- Aquí enlazamos las bibliotecas y nuestro código JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Esto nos ayuda a hacer cosas divertidas con JavaScript -->
+  <script src="game.js" charset="utf-8"></script>
+  <!-- Aquí está nuestro código para el juego -->
+</body>
+
+</html>

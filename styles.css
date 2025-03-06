@@ -1,0 +1,103 @@
+body {
+  text-align: center; /* Centra todo en la página */
+  background-color: #1a1a1a; /* Fondo oscuro moderno */
+  background-image: radial-gradient(circle, #333333, #1a1a1a); /* Degradado radial para profundidad */
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita el desbordamiento */
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive; /* Fuente de videojuegos */
+  font-size: 2.5rem; /* Tamaño un poco más pequeño */
+  margin: 20px 0; /* Espacio alrededor del título */
+  color: #ffcc00; /* Color amarillo brillante */
+  text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; /* Efecto de neón */
+}
+
+.container {
+  display: block; /* Hace que el contenedor sea un bloque */
+  width: 80%; /* Ancho más grande para pantallas pequeñas */
+  max-width: 500px; /* Ancho máximo */
+  margin: auto; /* Centra el contenedor */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  border-radius: 20px; /* Esquinas redondeadas */
+  box-shadow: 0 0 30px rgba(255, 204, 0, 0.5); /* Sombra neón */
+}
+
+.btn {
+  margin: 15px; /* Espacio más pequeño entre los botones */
+  display: inline-block; /* Los botones se ponen uno al lado del otro */
+  height: 150px; /* Altura más pequeña */
+  width: 150px; /* Ancho más pequeño */
+  border: 5px solid rgba(255, 255, 255, 0.2); /* Borde semi-transparente */
+  border-radius: 50%; /* Botones circulares */
+  transition: all 0.3s ease; /* Transición suave */
+  cursor: pointer; /* Cambia el cursor al pasar */
+}
+
+.btn:hover {
+  transform: scale(1.1); /* Efecto de agrandar al pasar el mouse */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Sombra al pasar */
+}
+
+.game-over {
+  background-color: #ff4444; /* Fondo rojo más vibrante */
+  opacity: 0.9; /* Un poco transparente */
+}
+
+.red {
+  background-color: #ff4444; /* Rojo brillante */
+  box-shadow: 0 0 20px #ff4444; /* Sombra neón roja */
+}
+
+.green {
+  background-color: #00cc66; /* Verde brillante */
+  box-shadow: 0 0 20px #00cc66; /* Sombra neón verde */
+}
+
+.blue {
+  background-color: #3399ff; /* Azul brillante */
+  box-shadow: 0 0 20px #3399ff; /* Sombra neón azul */
+}
+
+.yellow {
+  background-color: #ffcc00; /* Amarillo brillante */
+  box-shadow: 0 0 20px #ffcc00; /* Sombra neón amarilla */
+}
+
+.pressed {
+  box-shadow: 0 0 30px white, 0 0 50px white; /* Sombra blanca más intensa */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-blanco */
+  transform: scale(0.95); /* Efecto de presión */
+}
+
+/* Animación de fondo */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff4444, #00cc66, #3399ff, #ffcc00);
+  background-size: 400% 400%;
+  animation: backgroundAnimation 15s ease infinite;
+  opacity: 0.1; /* Fondo animado muy suave */
+  z-index: -1;
+}
